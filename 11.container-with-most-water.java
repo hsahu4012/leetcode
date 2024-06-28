@@ -8,6 +8,9 @@
 class Solution {
     public int maxArea(int[] height) {
         int max_area = 0;
+        if (height.length == 0) {
+            return max_area;
+        }
         int left = 0;
         int right = height.length - 1;
         while (left < right) {
